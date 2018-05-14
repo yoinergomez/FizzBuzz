@@ -17,18 +17,6 @@ import static org.junit.Assert.*;
  */
 public class ArithmeticOperationsTest {
     
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-    
     @Test
     public void isMultipleOfThree() {
         int number = 9;
