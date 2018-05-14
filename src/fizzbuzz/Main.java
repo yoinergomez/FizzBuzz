@@ -5,6 +5,8 @@
  */
 package fizzbuzz;
 
+import bl.FizzBuzz;
+
 /**
  *
  * @author yoinergomez
