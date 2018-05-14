@@ -5,9 +5,6 @@
  */
 package bl;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -17,24 +14,49 @@ import static org.junit.Assert.*;
  */
 public class FizzBuzztest {
     
+    private FizzBuzz fizzbuzz;
+    
     public FizzBuzztest() {
+        fizzbuzz = new FizzBuzz();
     }
     
-    @AfterClass
-    public static void tearDownClass() {
+    @Test
+    public void verifyNumber() {
+        int number = 2;
+        String result;
+        
+        result = fizzbuzz.evaluateFizzBuzz(number);
+        
+        assertEquals("2", result);
     }
     
-    @Before
-    public void setUp() {
+    @Test
+    public void verifyFizz() {
+        int number = 6;
+        String result;
+        
+        result = fizzbuzz.evaluateFizzBuzz(number);
+        
+        assertEquals("Fizz", result);
     }
     
-    @After
-    public void tearDown() {
+    @Test
+    public void verifyBuzz() {
+        int number = 10;
+        String result;
+        
+        result = fizzbuzz.evaluateFizzBuzz(number);
+        
+        assertEquals("Buzz", result);
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    
+    @Test
+    public void verifyFizzBuzz() {
+        int number = 30;
+        String result;
+        
+        result = fizzbuzz.evaluateFizzBuzz(number);
+        
+        assertEquals("FizzBuzz", result);
+    }
 }

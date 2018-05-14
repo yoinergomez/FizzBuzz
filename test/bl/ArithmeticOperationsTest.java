@@ -5,9 +5,6 @@
  */
 package bl;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -21,8 +18,9 @@ public class ArithmeticOperationsTest {
     public void isMultipleOfThree() {
         int number = 9;
         int multiple = 3;
+        boolean result;
         
-        boolean result = ArithmeticOperations.isMultipleOf(number, multiple);
+        result = ArithmeticOperations.isMultipleOf(number, multiple);
         
         assertTrue(result);
     }
@@ -31,8 +29,9 @@ public class ArithmeticOperationsTest {
     public void isNotMultipleOfThree() {
         int number = 7;
         int multiple = 3;
+        boolean result;
         
-        boolean result = ArithmeticOperations.isMultipleOf(number, multiple);
+        result = ArithmeticOperations.isMultipleOf(number, multiple);
         
         assertFalse(result);
     }
@@ -41,8 +40,9 @@ public class ArithmeticOperationsTest {
     public void isMultipleOfFive() {
         int number = 100;
         int multiple = 5;
+        boolean result;
         
-        boolean result = ArithmeticOperations.isMultipleOf(number, multiple);
+        result = ArithmeticOperations.isMultipleOf(number, multiple);
         
         assertTrue(result);
     }
@@ -51,8 +51,9 @@ public class ArithmeticOperationsTest {
     public void isNotMultipleOfFive() {
         int number = 7;
         int multiple = 5;
+        boolean result;
         
-        boolean result = ArithmeticOperations.isMultipleOf(number, multiple);
+        result = ArithmeticOperations.isMultipleOf(number, multiple);
         
         assertFalse(result);
     }
